@@ -1,0 +1,17 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+.env
+.env.local
+
+# Python loader
+__pycache__/
+*.pyc
+.venv/
+loader/.cache/
+
+# Personal build spec: job-targeting notes and draft resume bullets.
+# Kept locally, deliberately not published.
+transit-spatial-platform-spec.md

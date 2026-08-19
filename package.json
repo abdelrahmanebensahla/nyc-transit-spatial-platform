@@ -1,0 +1,27 @@
+{
+  "name": "nyc-transit-spatial-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "drizzle-kit generate && node scripts/fix-geography-ddl.mjs",
+    "db:check": "drizzle-kit check"
+  },
+  "dependencies": {
+    "@arcgis/core": "^5.1.19",
+    "@neondatabase/serverless": "^1.0.1",
+    "drizzle-orm": "^0.44.4",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "drizzle-kit": "^0.31.4",
+    "typescript": "^5.9.2"
+  }
+}
