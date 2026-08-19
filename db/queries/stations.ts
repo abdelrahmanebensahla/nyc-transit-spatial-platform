@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { db } from '../client';
+import { getDb } from '../client';
 import type { StationCollection } from '@/lib/geojson';
 
 /**
@@ -27,7 +27,7 @@ import type { StationCollection } from '@/lib/geojson';
  * Phase 5 transfer analysis rather than here.
  */
 export async function getStations(): Promise<StationCollection> {
-  const rows = await db.execute<{ collection: StationCollection }>(sql`
+  const rows = await getDb().execute<{ collection: StationCollection }>(sql`
     WITH station_routes AS (
       SELECT
         COALESCE(child.parent_station, child.stop_id) AS station_id,

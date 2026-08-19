@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { db } from '../client';
+import { getDb } from '../client';
 import type { RouteLineCollection } from '@/lib/geojson';
 
 /**
@@ -37,7 +37,7 @@ export async function getRouteLines(
       ? sql`ST_AsGeoJSON(ST_Simplify(sh.geom::geometry, ${toleranceDegrees}), 6)::json`
       : sql`ST_AsGeoJSON(sh.geom, 6)::json`;
 
-  const rows = await db.execute<{ collection: RouteLineCollection }>(sql`
+  const rows = await getDb().execute<{ collection: RouteLineCollection }>(sql`
     WITH representative AS (
       SELECT DISTINCT ON (t.route_id, t.direction_id)
         t.route_id,
