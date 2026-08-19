@@ -38,16 +38,32 @@ export async function getRouteLines(
       : sql`ST_AsGeoJSON(sh.geom, 6)::json`;
 
   const rows = await getDb().execute<{ collection: RouteLineCollection }>(sql`
-    WITH representative AS (
-      SELECT DISTINCT ON (t.route_id, t.direction_id)
-        t.route_id,
-        t.direction_id,
+    -- Collapse trips to distinct (route, direction, shape) triples BEFORE
+    -- touching geometry. Joining shapes to trips directly makes Postgres
+    -- evaluate ST_Length over 67,491 rows -- a geodesic length across
+    -- multi-hundred-vertex linestrings, recomputed for every trip sharing a
+    -- shape -- only to discard all but 56. There are 250 distinct triples.
+    -- Measured against Neon: 12.58s before, 0.157s after, same output.
+    WITH pairs AS (
+      SELECT DISTINCT route_id, direction_id, shape_id
+      FROM trips
+      WHERE shape_id IS NOT NULL
+    ),
+    representative AS (
+      SELECT DISTINCT ON (p.route_id, p.direction_id)
+        p.route_id,
+        p.direction_id,
         sh.shape_id,
         sh.geom
-      FROM trips t
-      JOIN shapes sh ON sh.shape_id = t.shape_id
-      WHERE t.shape_id IS NOT NULL
-      ORDER BY t.route_id, t.direction_id, ST_Length(sh.geom) DESC
+      FROM pairs p
+      JOIN shapes sh ON sh.shape_id = p.shape_id
+      -- shape_id is an explicit tiebreak, not decoration. MTA publishes the
+      -- same physical alignment under several shape_ids for different service
+      -- patterns, so lengths tie exactly: 1..N03R and 1..N15R are both
+      -- 23505.176094 m, and route 4 has three shapes tied at 36859.093450 m.
+      -- Without it DISTINCT ON picks arbitrarily and the endpoint returns a
+      -- different shape_id between requests.
+      ORDER BY p.route_id, p.direction_id, ST_Length(sh.geom) DESC, sh.shape_id
     )
     SELECT json_build_object(
       'type', 'FeatureCollection',
