@@ -1,0 +1,1 @@
+{"error":{"code":498,"message":"Token Invalid.","details":["The required authentication information is invalid. The token is either invalid or has expired."],"restInfoUrl":"https://basemapstyles-api.arcgis.com/arcgis/rest/info"}}

@@ -17,6 +17,7 @@ type Status = { kind: 'loading' } | { kind: 'ready' } | { kind: 'error'; message
 export default function SubwayMap() {
   const container = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<Status>({ kind: 'loading' });
+  const [basemapError, setBasemapError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!container.current) return;
@@ -64,6 +65,20 @@ export default function SubwayMap() {
           (window as unknown as { __view?: MapView }).__view = view;
         }
 
+        // A rejected API key fails ONLY the basemap. The operational layers are
+        // client-side, so they draw regardless and view.when() still resolves —
+        // the map just renders subway lines on blank white with nothing in the
+        // console to explain it. Surface it instead of failing silently.
+        map.basemap?.load().catch((error: unknown) => {
+          if (cancelled) return;
+          const message = error instanceof Error ? error.message : String(error);
+          setBasemapError(
+            /invalid|token|498|401/i.test(message)
+              ? 'Basemap rejected the ArcGIS API key (token invalid or expired). Subway layers are unaffected.'
+              : `Basemap failed to load: ${message}`,
+          );
+        });
+
         await view.when();
         if (!cancelled) setStatus({ kind: 'ready' });
       } catch (error) {
@@ -90,6 +105,7 @@ export default function SubwayMap() {
       </Notice>}
       {status.kind === 'loading' && <Notice>Loading subway geometry…</Notice>}
       {status.kind === 'error' && <Notice tone="error">Map failed: {status.message}</Notice>}
+      {status.kind === 'ready' && basemapError && <Notice tone="warn">{basemapError}</Notice>}
     </div>
   );
 }
