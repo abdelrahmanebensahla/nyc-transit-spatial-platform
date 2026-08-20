@@ -6,6 +6,7 @@ import MapView from '@arcgis/core/views/MapView';
 import { ARCGIS_API_KEY, configureArcGIS } from '@/lib/arcgis/config';
 import { buildRouteLayer } from '@/lib/arcgis/route-layer';
 import { buildStationLayer } from '@/lib/arcgis/station-layer';
+import { createFallbackBasemap } from '@/lib/arcgis/fallback-basemap';
 import type { RouteLineCollection, StationCollection } from '@/lib/geojson';
 
 /** Roughly the five boroughs. */
@@ -45,7 +46,9 @@ export default function SubwayMap() {
         if (cancelled) return;
 
         const map = new ArcGISMap({
-          basemap: ARCGIS_API_KEY ? 'arcgis/dark-gray' : undefined,
+          // No key means the ArcGIS basemap cannot load at all, so go straight
+          // to the fallback rather than constructing one that will fail.
+          basemap: ARCGIS_API_KEY ? 'arcgis/dark-gray' : createFallbackBasemap(),
           // Routes first so stations draw on top of the lines.
           layers: [buildRouteLayer(routes), buildStationLayer(stations)],
         });
@@ -72,10 +75,16 @@ export default function SubwayMap() {
         map.basemap?.load().catch((error: unknown) => {
           if (cancelled) return;
           const message = error instanceof Error ? error.message : String(error);
+          const rejectedKey = /invalid|token|498|401/i.test(message);
+
+          // Swap in the keyless basemap rather than leaving the operational
+          // layers on blank white.
+          map.basemap = createFallbackBasemap();
+
           setBasemapError(
-            /invalid|token|498|401/i.test(message)
-              ? 'Basemap rejected the ArcGIS API key (token invalid or expired). Subway layers are unaffected.'
-              : `Basemap failed to load: ${message}`,
+            rejectedKey
+              ? 'ArcGIS rejected the API key (498). Showing a keyless fallback basemap; subway layers are unaffected.'
+              : `ArcGIS basemap failed (${message}). Showing a keyless fallback basemap.`,
           );
         });
 
@@ -99,10 +108,11 @@ export default function SubwayMap() {
   return (
     <div style={{ position: 'relative', inset: 0, width: '100%', height: '100%' }}>
       <div ref={container} style={{ width: '100%', height: '100%' }} />
-      {!ARCGIS_API_KEY && <Notice tone="warn">
-        NEXT_PUBLIC_ARCGIS_API_KEY is not set — route and station layers still render,
-        but there is no basemap underneath them.
-      </Notice>}
+      {!ARCGIS_API_KEY && (
+        <Notice tone="warn">
+          NEXT_PUBLIC_ARCGIS_API_KEY is not set — showing a keyless fallback basemap.
+        </Notice>
+      )}
       {status.kind === 'loading' && <Notice>Loading subway geometry…</Notice>}
       {status.kind === 'error' && <Notice tone="error">Map failed: {status.message}</Notice>}
       {status.kind === 'ready' && basemapError && <Notice tone="warn">{basemapError}</Notice>}
