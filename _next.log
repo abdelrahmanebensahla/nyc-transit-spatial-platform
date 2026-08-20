@@ -62,3 +62,394 @@
 }
 <w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback.pack.gz: Error: invalid code -- missing end-of-block
 <w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback.pack.gz: Error: invalid code -- missing end-of-block
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\server\\app-paths-manifest.json',
+  page: '/api/vehicles'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\server\\app\\page.js',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ GET /api/vehicles 500 in 18960ms
+ GET /api/vehicles 500 in 920ms
+ GET / 500 in 15507ms
+ GET / 500 in 920ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ GET / 500 in 1085ms
+ GET / 500 in 281ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\api\vehicles\route.js:104:8966)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\api\vehicles\route.js:104:9014) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/api/vehicles'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\api\vehicles\route.js:104:8966)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\api\vehicles\route.js:104:9014) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/api/vehicles'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ GET /api/vehicles 500 in 1119ms
+ GET /api/vehicles 500 in 675ms
+ GET / 500 in 1097ms
+ GET / 500 in 674ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback\0.pack.gz'
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ GET / 500 in 900ms
+ GET / 500 in 411ms
+ GET / 500 in 816ms
+ GET / 500 in 412ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\webpack-runtime.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\pages\_document.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\require.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\load-components.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\utils.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\options.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\swc\index.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\config.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\next.js
+- C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7425)
+    at Object.<anonymous> (C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js:2:7474) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ GET / 500 in 671ms
+ GET / 500 in 319ms

@@ -18,3 +18,7 @@ transit-spatial-platform-spec.md
 
 # Poller
 poller/.cache/
+
+# Runtime logs
+poller_run.log
+_next.log
