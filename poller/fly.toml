@@ -1,0 +1,25 @@
+# fly launch --no-deploy, then:
+#   fly secrets set DATABASE_URL="postgres://..."
+#   fly deploy
+#
+# One machine, always on. auto_stop_machines must stay false: a poller that
+# scales to zero stops collecting, and the analytics need continuous history.
+
+app = "nyc-transit-poller"
+primary_region = "ewr"           # Newark, closest to both the MTA feeds and Neon us-east
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  POLL_SECONDS = "30"
+  RETAIN_DAYS = "7"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
+
+[processes]
+  poller = "python poller/poll.py"
+
+# No [http_service]: this worker serves nothing, it only writes to Postgres.

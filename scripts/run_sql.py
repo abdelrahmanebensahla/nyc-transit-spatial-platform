@@ -79,7 +79,11 @@ def split_statements(text: str) -> list[str]:
             current.append(char)
         elif char == "$":
             end = text.find("$", i + 1)
-            if end != -1 and text[i + 1 : end].replace("_", "").isalnum():
+            # A dollar quote is $$ (empty tag) or $tag$. The empty case matters:
+            # plpgsql bodies are almost always $$-quoted, and missing it splits
+            # the function on the semicolons inside it.
+            tag_body = text[i + 1 : end] if end != -1 else None
+            if end != -1 and (tag_body == "" or tag_body.replace("_", "").isalnum()):
                 dollar_tag = text[i : end + 1]
                 current.append(dollar_tag)
                 i = end + 1
