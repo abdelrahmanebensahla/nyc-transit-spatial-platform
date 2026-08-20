@@ -8,8 +8,8 @@ analytics are the phases after this.
 Every design decision below is recorded with the measurement that drove it.
 
 **Phase 1 — GTFS static ingestion and the PostGIS foundation: complete.**
-**Phase 2 — ArcGIS frontend over static data: complete apart from deployment.**
-No realtime poller and no analytics yet.
+**Phase 2 — ArcGIS frontend over static data: complete and deployed.**
+Phase 3 (realtime ingestion) in progress. No analytics yet.
 
 ## Layout
 
@@ -21,7 +21,7 @@ app/
 components/          map + client boundary
 lib/
   geojson.ts         wire types
-  arcgis/            layer construction, SDK config
+  arcgis/            layer construction, SDK config, keyless fallback basemap
 db/
   postgis.ts         Drizzle custom types for geography columns
   schema/            one file per table
@@ -34,6 +34,7 @@ scripts/
   populate_shape_stop_positions.sql
   verify.sql         sanity checks + index-usage EXPLAIN
   fix-geography-ddl.mjs   repairs drizzle-kit's quoted geography types
+  check-arcgis-key.mjs    validates an ArcGIS key without deploying
 ```
 
 ## Setup
@@ -216,6 +217,34 @@ and the first `/api/routes` after an idle period took **34.5 s** against a
 sub-second warm response. The Cache-Control headers hide this from repeat
 visitors, but the first hit after a quiet spell is slow, and it will matter more
 once the Phase 3 poller makes the database continuously active.
+
+### The basemap degrades instead of disappearing
+
+A rejected ArcGIS API key fails **only** the basemap. The route and station
+layers are client-side `FeatureLayer`s built from `Graphic` arrays, so they draw
+regardless and `view.when()` still resolves — the original failure mode was
+subway lines on blank white with nothing in the UI or console explaining it.
+
+Two things address that:
+
+- `map.basemap.load()` is caught, and the notice names the cause. ArcGIS returns
+  code **498** for a rejected key.
+- On failure, or when no key is configured, a keyless CARTO raster basemap is
+  swapped in via `WebTileLayer`, attribution carried on the layer.
+
+ArcGIS stays primary and resumes automatically the moment a working key is
+present; the fallback only engages on failure. `scripts/check-arcgis-key.mjs`
+validates a key against the endpoints the SDK actually uses, without a deploy —
+it parses response *bodies* rather than status codes, because ArcGIS returns
+HTTP 200 with `{"error":{"code":498}}` on some endpoints.
+
+### The database client is lazy, and that is a build requirement
+
+`next build` imports every route module during "Collecting page data", so
+constructing the Drizzle client at module scope made the build demand a
+`DATABASE_URL` it never uses. That failed on Vercel. `getDb()` defers the
+environment read to the first real query, so the build works with no database
+in reach — reproducible locally with `DATABASE_URL= npx next build`.
 
 ### Subway only: what "subway" excludes
 
