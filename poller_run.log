@@ -1,0 +1,10 @@
+15:41:20 INFO    startup maintenance: 0 partition(s) created, 0 dropped
+15:41:22 INFO     703 vehicles | 703 changed    0 unchanged (0% deduped) | 703 written 333 arrivals |  2.7s
+15:41:55 INFO     695 vehicles | 186 changed  509 unchanged (73% deduped) | 186 written 113 arrivals |  5.3s
+15:42:22 INFO     693 vehicles | 143 changed  550 unchanged (79% deduped) | 143 written  91 arrivals |  2.2s
+15:43:04 INFO     694 vehicles | 171 changed  523 unchanged (75% deduped) | 171 written 104 arrivals | 13.9s
+15:43:22 INFO     694 vehicles | 130 changed  564 unchanged (81% deduped) | 130 written  79 arrivals |  2.3s
+15:43:52 INFO     691 vehicles | 119 changed  572 unchanged (83% deduped) | 119 written  73 arrivals |  2.2s
+15:44:22 INFO     694 vehicles | 168 changed  526 unchanged (76% deduped) | 168 written 100 arrivals |  2.1s
+15:44:52 INFO     689 vehicles | 134 changed  555 unchanged (81% deduped) | 134 written  89 arrivals |  2.0s
+15:45:22 INFO     690 vehicles | 168 changed  522 unchanged (76% deduped) | 168 written 111 arrivals |  2.1s

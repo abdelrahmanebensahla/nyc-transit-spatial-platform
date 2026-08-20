@@ -1,0 +1,64 @@
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3311
+   - Network:      http://172.20.10.2:3311
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 9.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 39.1s (10289 modules)
+ GET / 200 in 44403ms
+ GET / 200 in 217ms
+ ○ Compiling /api/stops ...
+ ✓ Compiled /api/stops in 18.8s (10429 modules)
+ GET / 200 in 326ms
+ GET /api/stops 200 in 19819ms
+ ○ Compiling /api/vehicles ...
+ GET /api/routes 200 in 20628ms
+ ✓ Compiled /api/vehicles in 3s (10432 modules)
+ GET /api/stops 200 in 3156ms
+ GET /api/vehicles 200 in 3561ms
+ GET /api/routes 200 in 3403ms
+ GET / 200 in 185ms
+ GET /api/routes 200 in 136ms
+ GET /api/stops 200 in 357ms
+ ✓ Compiled in 4.4s (10429 modules)
+ GET / 200 in 342ms
+ GET /api/stops 200 in 947ms
+ GET /api/stops 200 in 78ms
+ GET /api/routes 200 in 1206ms
+ GET /api/routes 200 in 306ms
+ ○ Compiling /api/vehicles ...
+ ✓ Compiled /api/vehicles in 1246ms (5336 modules)
+ GET /api/vehicles 200 in 1863ms
+ GET /api/vehicles 200 in 557ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\server\\app-paths-manifest.json',
+  page: '/api/vehicles'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.9s (10779 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\server\app\page.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\server\\app\\page.js',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Abdel\\OneDrive\\Documents\\projects\\2026\\nyc_transit_spatial_platform\\.next\\routes-manifest.json'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback.pack.gz: Error: invalid code -- missing end-of-block
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack failed from C:\Users\Abdel\OneDrive\Documents\projects\2026\nyc_transit_spatial_platform\.next\cache\webpack\client-development-fallback.pack.gz: Error: invalid code -- missing end-of-block

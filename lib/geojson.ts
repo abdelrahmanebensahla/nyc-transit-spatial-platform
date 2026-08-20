@@ -49,3 +49,18 @@ export interface StationProperties {
 
 export type RouteLineCollection = FeatureCollection<LineStringGeometry, RouteLineProperties>;
 export type StationCollection = FeatureCollection<PointGeometry, StationProperties>;
+
+/** A train, positioned by linear referencing rather than supplied coordinates. */
+export interface VehicleProperties {
+  trip_id: string;
+  route_id: string;
+  route_color: string;
+  stop_id: string | null;
+  stop_name: string | null;
+  current_status: string | null;
+  observed_at: string;
+  /** Which branch placed this train: shape_stop | interpolated | station_fallback. */
+  position_source: 'shape_stop' | 'interpolated' | 'station_fallback';
+}
+
+export type VehicleCollection = FeatureCollection<PointGeometry, VehicleProperties>;
